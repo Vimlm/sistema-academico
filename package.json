@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": " npx tsx watch src/server.ts"
+    "start": " yarn tsx watch src/server/server.ts"
   },
   "keywords": [],
   "author": "",
