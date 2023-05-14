@@ -1,7 +1,6 @@
 {
-  "name": "app_js",
+  "name": "sistema-academico",
   "version": "1.0.0",
-  "description": "primeiro projeto em node",
   "main": "index.js",
   "scripts": {
     "start": "yarn tsx watch src/index.ts"
@@ -21,6 +20,7 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
+    "@types/body-parser": "^1.19.2",
     "@types/express": "^4.17.17",
     "prisma": "^4.14.0",
     "tsx": "^3.12.6",

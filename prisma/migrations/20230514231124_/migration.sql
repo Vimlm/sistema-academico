@@ -4,7 +4,8 @@ CREATE TABLE "Student" (
     "password" TEXT NOT NULL,
     "name" TEXT NOT NULL,
     "email" TEXT NOT NULL,
-    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL
 );
 
 -- CreateTable
@@ -13,7 +14,8 @@ CREATE TABLE "Teacher" (
     "password" TEXT NOT NULL,
     "name" TEXT NOT NULL,
     "email" TEXT NOT NULL,
-    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL
 );
 
 -- CreateTable
@@ -22,6 +24,7 @@ CREATE TABLE "Class" (
     "name" TEXT NOT NULL,
     "teacherId" INTEGER NOT NULL,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL,
     CONSTRAINT "Class_teacherId_fkey" FOREIGN KEY ("teacherId") REFERENCES "Teacher" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
@@ -31,6 +34,7 @@ CREATE TABLE "Course" (
     "name" TEXT NOT NULL,
     "classId" INTEGER NOT NULL,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL,
     CONSTRAINT "Course_classId_fkey" FOREIGN KEY ("classId") REFERENCES "Student" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
 );
 

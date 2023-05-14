@@ -5,7 +5,7 @@ const studentRoute : Router = Router();
 const studentController = new StudentController();
 
 //create
-studentRoute.post("/student/create", new StudentController().cadastrar);
+studentRoute.post("/student/create", studentController.cadastrar);
 
 //read list
 studentRoute.get("/student/listar", studentController.listar);

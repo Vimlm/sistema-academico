@@ -4,7 +4,7 @@ import { prisma } from '..';
 
 export class StudentController {
   //Create
-  cadastrar = async (req: Request, res: Response): Promise<Response> => {
+  cadastrar = async (req : Request, res : Response) : Promise<Response> => {
     const { password, name, email } = req.body;
 
     try {

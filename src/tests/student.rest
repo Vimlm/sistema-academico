@@ -5,7 +5,7 @@ Content-Type: application/json
 {
     "password": "banana123",
     "name": "First Name",
-    "email": "email@email.com",
+    "email": "email@email.com"
 }
 
 ### Requisição para listar todos os alunos (read)
