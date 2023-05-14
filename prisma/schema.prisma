@@ -13,6 +13,7 @@ model Student {
   name      String 
   email     String   @unique
   createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
   course   Course[]
 }
 
@@ -22,6 +23,7 @@ model Teacher {
   name      String 
   email     String   @unique
   createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
   class    Class[]
 }
 
@@ -30,6 +32,7 @@ model Class {
   name      String
   teacherId Int
   createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
   teacher   Teacher  @relation(fields: [teacherId], references: [id])
 }
 
@@ -38,5 +41,6 @@ model Course {
   name      String
   classId   Int
   createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
   student   Student    @relation(fields: [classId], references: [id])
 }
