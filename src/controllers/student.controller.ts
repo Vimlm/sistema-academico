@@ -21,7 +21,7 @@ export class StudentController {
       console.error(e);
       return res
         .status(500)
-        .json({ error: 'Não foi possível cadastrar o cliente.' });
+        .json({ error: 'Não foi possível cadastrar o aluno.' });
     }
   }
 
@@ -43,7 +43,7 @@ export class StudentController {
       console.error(e);
       return res
         .status(500)
-        .json({ error: 'Não foi possível listar os clientes.' });
+        .json({ error: 'Não foi possível listar os alunos.' });
     }
   }
 
@@ -63,7 +63,7 @@ export class StudentController {
       console.error(e);
       return res
         .status(500)
-        .json({ error: 'Não foi possível buscar o cliente.' });
+        .json({ error: 'Não foi possível buscar o aluno.' });
     }
   }
 
@@ -88,7 +88,7 @@ export class StudentController {
       console.error(e);
       return res
         .status(500)
-        .json({ error: 'Não foi possível atualizar o cliente.' });
+        .json({ error: 'Não foi possível atualizar o aluno.' });
     }
   }
 
@@ -103,12 +103,12 @@ export class StudentController {
         },
       });
 
-      return res.status(200).json({ message: 'Cliente excluído com sucesso!' });
+      return res.status(200).json({ message: 'Aluno excluído com sucesso!' });
     } catch (e) {
       console.error(e);
       return res
         .status(500)
-        .json({ error: 'Não foi possível excluir o cliente.' });
+        .json({ error: 'Não foi possível excluir o aluno.' });
     }
   }
 }

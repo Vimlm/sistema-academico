@@ -3,25 +3,26 @@ POST http://localhost:3000/student/create
 Content-Type: application/json
 
 {
-    "password": "banana123",
-    "name": "First Name",
-    "email": "email@email.com"
+    "password": "batata12",
+    "name": "Nome do Aluno",
+    "email": "Email@email.com"
 }
 
 ### Requisição para listar todos os alunos (read)
 GET http://localhost:3000/student/listar
 
 ### Requisição para buscar um aluno pelo id (read by id)
-GET http://localhost:3000/student/0
+GET http://localhost:3000/student/1
 
 ### Requisição para atualizar um aluno pelo id (update by id)
-PUT http://localhost:3000/student/0
+PUT http://localhost:3000/student/4
 Content-Type: application/json
 
 {
-    "nome": "pera",
-    "preco": 4.20
+    "password": "passwordNovo",
+    "name": "Novo Aluno",
+    "email": "NovoAluno@email.com"
 }
 
 ### Requisição para deletar um aluno pelo id (delete by id)
-DELETE http://localhost:3000/student/0
+DELETE http://localhost:3000/student/4
