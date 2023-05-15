@@ -1,4 +1,4 @@
-### Requisição para cadastrar um produto (create)
+### Requisição para cadastrar um aluno (create)
 POST http://localhost:3000/student/create
 Content-Type: application/json
 

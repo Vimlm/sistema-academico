@@ -1,0 +1,28 @@
+### Requisição para cadastrar um professor (create)
+POST http://localhost:3000/teacher/create
+Content-Type: application/json
+
+{
+    "password": "batata123123",
+    "name": "Nome do professor 2",
+    "email": "outroemail@email"
+}
+
+### Requisição para listar todos os professors (read)
+GET http://localhost:3000/teacher/listar
+
+### Requisição para buscar um professor pelo id (read by id)
+GET http://localhost:3000/teacher/1
+
+### Requisição para atualizar um professor pelo id (update by id)
+PUT http://localhost:3000/teacher/1
+Content-Type: application/json
+
+{
+    "password": "passwordNovo",
+    "name": "Novo professor",
+    "email": "NovoAluno@email.com"
+}
+
+### Requisição para deletar um professor pelo id (delete by id)
+DELETE http://localhost:3000/teacher/1
